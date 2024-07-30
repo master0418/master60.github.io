@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="smalllogo.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking - Chennai</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MovieBooking</div>
+        <img src="logo.jpg" alt="MovieBooking Logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Chennai Movie Booking</h1>
+            <p>Book your favorite movies easily!</p>
+            <button onclick="bookNow()">Book Now</button>
+        </section>
+        <section class="search-bar">
+            <input type="text" id="search" placeholder="Search for movies...">
+            <button id="searchBtn">Search</button>
+        </section>
+        <section class="filters">
+            <h2>Filter by:</h2>
+            <div class="filter-options">
+                <select id="genreFilter">
+                    <option value="">Genre</option>
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="horror">Horror</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                    <option value="thriller">Thriller</option>
+                </select>
+                <select id="languageFilter">
+                    <option value="">Language</option>
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="tamil">Tamil</option>
+                </select>
+            </div>
+        </section>
+        <section class="movies">
+            <h2>Now Showing</h2>
+            <div class="movie-list" id="nowShowing">
+                <!-- Movie Cards will be inserted here dynamically -->
+            </div>
+        </section>
+        <section class="upcoming-movies">
+            <h2>Upcoming Movies</h2>
+            <div class="movie-list" id="upcomingMovies">
+                <!-- Movie Cards will be inserted here dynamically -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We provide the best movie booking experience in Chennai.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@moviebooking.com</p>
+                <p>Phone: +91 12345 67890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MovieBooking. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
