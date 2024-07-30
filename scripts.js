@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderMovies(filteredMovies, 'nowShowing');
     });
 
-    // Example function for book now button
     window.bookNow = function() {
         alert('Book Now button clicked!');
     };
